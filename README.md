@@ -1,3 +1,6 @@
+# Kidnapped Vehicle Project Description
+This repo contains my implementation of a particle filter for the Kidnapped Vehicle Project (Project 3, Term 2) for the Localization course in Udacity's Self-Driving Car Nanodegree. The details of the project are given in the original project repo README file, the contents of which are included below.
+
 # Overview
 This repository contains all the code needed to complete the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
 

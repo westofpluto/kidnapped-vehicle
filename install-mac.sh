@@ -6,7 +6,9 @@ patch CMakeLists.txt < ../cmakepatch.txt
 mkdir build
 export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig 
 cd build
-OPENSSL_VERSION=`openssl version -v | cut -d' ' -f2`
+#OPENSSL_VERSION=`openssl version -v | cut -d' ' -f2`
+OPENSSL_EXE=/usr/local/Cellar/openssl/1.0.2n/bin/openssl
+OPENSSL_VERSION=`$OPENSSL_EXE version -v | cut -d' ' -f2`
 cmake -DOPENSSL_ROOT_DIR=$(brew --cellar openssl)/$OPENSSL_VERSION -DOPENSSL_LIBRARIES=$(brew --cellar openssl)/$OPENSSL_VERSION/lib ..
 make 
 sudo make install
